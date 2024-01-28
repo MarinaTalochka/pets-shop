@@ -5,7 +5,8 @@
 
 ## Базовый уровень
 Выведи в интерфейсе товары для животных (массив `items`)
-- Используй шаблон (template) с `id="item-template"` в [index.html](https://github.com/CodegirlSchool/pets-shop/blob/main/index.html#L43)
+- Используй шаблон (template) с `id="item-template"` в [index.html](http
+s://github.com/CodegirlSchool/pets-shop/blob/main/index.html#L43)
 
 - Название [товара](https://github.com/CodegirlSchool/pets-shop/blob/main/script.js#L2) (`title`) помести в `h1`,
 описание (`description`) — в `p`, картинку (`img`) — в одноименный тег, цену (`price`) — в `span` с классом `"price"` и массив тегов `tags` — в `div class="tags"`
@@ -20,8 +21,7 @@
     </div>
   </div>
   ```
-- Отрисованные объекты подставь внутрь элемента с `id="shop-items"`
-
+- О
 
 
 ## Продвинутый уровень

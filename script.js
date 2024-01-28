@@ -84,3 +84,26 @@ const items = [
     img: "./img/12.jpeg",
   },
 ];
+
+let template = document.getElementById("item-template");
+
+// Перебираем массив товаров для животных
+items.forEach(item => {
+  // Клонируем шаблон
+  let clone = template.content.cloneNode(true);
+  // Заполняем данные из объекта item
+  clone.querySelector("img").src = item.img;
+  clone.querySelector("h1").textContent = item.title;
+  clone.querySelector("p").textContent = item.description;
+  clone.querySelector("span.price").textContent = item.price;
+  // Перебираем массив тегов
+  item.tags.forEach(tag => {
+    // Создаем элемент span для каждого тега
+    let span = document.createElement("span");
+    span.textContent = tag;
+    // Добавляем его в div с классом tags
+    clone.querySelector("div.tags").appendChild(span);
+  });
+  // Добавляем клонированный элемент в элемент с id shop-items
+  document.getElementById("shop-items").appendChild(clone);
+});
