@@ -96,7 +96,7 @@ items.forEach(item => {
   clone.querySelector("h1").textContent = item.title;
   clone.querySelector("p").textContent = item.description;
   clone.querySelector("span.price").textContent = item.price;
-  // Перебираем массив тегов
+ 
   item.tags.forEach(tag => {
     // Создаем элемент span для каждого тега
     const span = document.createElement("span");
